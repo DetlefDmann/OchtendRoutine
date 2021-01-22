@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.watNu {
+    background-color: rgb(198, 166, 228);
+    text-align: center;
+    &__title {
+        color: black;
+        
+    }
+}
+
+.reward {
+    text-align: center;
+}
