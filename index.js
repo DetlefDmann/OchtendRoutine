@@ -11,6 +11,7 @@ const displayNeeded = document.querySelector(".reward__timeneeded")
 const klaar = document.getElementById("klaar");
 let index = 0;
 const schoolTodoList = [
+    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
     {title:"Medicijnen innemen.",duur:1 , description:"Ik pak een pilletje uit het vakje en neem het in.", picture:"./assets/medicijndoos.png"}, 
     {title:"Ontbijt klaarmaken en eten.",duur:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
     {title:"Eten klaarmaken voor school.",duur:10, description:"Ik maak brood klaar voor school en ik pak wat fruit. Dat doe ik in de broodtrommel.", picture:"./assets/broodmaaltijd.png" },
@@ -20,6 +21,7 @@ const schoolTodoList = [
     {departTime:7.5,departMessage:"De TAXI staat er!!"}
 ]
 const weekendTodoList = [
+    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
     {title:"Medicijnen innemen.",duur:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
     {title:"Aankleden.",duur:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
     {title:"Haren kammen.",duur:10,description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen",picture:"./assets/borstelhaar.png"},
@@ -27,6 +29,7 @@ const weekendTodoList = [
     {departTime:11,departMessage:"Het is dan wel weekend, maar je moet nu wel aangekleed zijn."}
 ]
 const onlineTodoList = [
+    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
     {title:"Medicijnen innemen.",duur:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
     {title:"Ontbijt klaarmaken en eten.",duur:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
     {title:"Aankleden.",duur:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
