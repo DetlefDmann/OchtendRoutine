@@ -28,7 +28,9 @@ const weekendTodoList = [
 ]
 const onlineTodoList = [
     {title:"Medicijnen innemen.",duur:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
-    {title:"",duur:1,description:"",picture:""},
+    {title:"Ontbijt klaarmaken en eten.",duur:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
+    {title:"Aankleden.",duur:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
+    {title:"Online les",duur:1,description:"Je bent nu klaar om les te gaan volgen",picture:"./assets/laptop.png"},
     {departTime:8.5,departMessage:"Je moet nu les gaan volgen op je laptop."}
 ]
 
@@ -65,7 +67,7 @@ const calcneededTime = () => {
 }
 
 
-// calculate the time till leave
+// calculate the time till leave and get the message out to the page
 const calcRemaining = () =>{
     let current = new Date();
     departTime = todoList[todoList.length-1].departTime;
