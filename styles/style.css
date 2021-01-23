@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: aquamarine;
+  font-family: "Architects Daughter", cursive;
 }
 
 header h1 {
@@ -9,7 +10,7 @@ header h1 {
 }
 
 .watNu {
-  background-color: #c6a6e4;
+  background-color: #7bdbbe;
   text-align: center;
 }
 .watNu__title {
@@ -18,5 +19,14 @@ header h1 {
 
 .reward {
   text-align: center;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

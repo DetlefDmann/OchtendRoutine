@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: aquamarine;
+    font-family: 'Architects Daughter', cursive;
 }
 
 header h1 {
@@ -9,7 +10,7 @@ header h1 {
 }
 
 .watNu {
-    background-color: rgb(198, 166, 228);
+    background-color: rgb(123, 219, 190);
     text-align: center;
     &__title {
         color: black;
@@ -19,4 +20,10 @@ header h1 {
 
 .reward {
     text-align: center;
+}
+
+.button {
+
+    display: flex;
+    justify-content: center;
 }
