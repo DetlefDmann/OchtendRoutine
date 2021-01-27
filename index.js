@@ -18,7 +18,7 @@ const schoolTodoList = [
     {title:"Tas inpakken.",duration:5, description:"Ik doe alles in mijn tas. Ik let er ook op dat ik mijn huiswerk meeneem.", picture:"./assets/tasinpakken.png"},
     {title:"Haren kammen.",duration:10, description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen", picture:"./assets/borstelhaar.png"},
     {title:"Met de katten knuffelen.", duration:0, description:"Ik zoek een kat uit en ga deze op een vriendelijke manier knuffelen.", picture:"./assets/katlopen.png"},
-    {departTime:7.5,departMessage:"De TAXI staat er!!"}
+    {departTime:7.42,departMessage:"De TAXI staat er!!"}
 ]
 const weekendTodoList = [
     {title:"Wassen",duration:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
