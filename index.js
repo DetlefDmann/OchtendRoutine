@@ -77,8 +77,8 @@ const calcRemaining = () =>{
     departMessage = todoList[todoList.length-1].departMessage;
     let hours = current.getHours();
     let minutes = current.getMinutes();
-    let actTime = hours*60 + minutes ;
-    let remainTime = departTime*60 - actTime;
+    let actTime = Math.floor(hours*60 + minutes) ;
+    let remainTime = Math.floor(departTime*60 - actTime);
     if (remainTime > 0) {
         displayRemaining.innerHTML= `Je hebt nog ${remainTime} minuten.`;
     }
