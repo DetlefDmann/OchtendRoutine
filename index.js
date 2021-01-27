@@ -11,29 +11,29 @@ const displayNeeded = document.querySelector(".reward__timeneeded")
 const klaar = document.getElementById("klaar");
 let index = 0;
 const schoolTodoList = [
-    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
-    {title:"Medicijnen innemen.",duur:1 , description:"Ik pak een pilletje uit het vakje en neem het in.", picture:"./assets/medicijndoos.png"}, 
-    {title:"Ontbijt klaarmaken en eten.",duur:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
-    {title:"Eten klaarmaken voor school.",duur:10, description:"Ik maak brood klaar voor school en ik pak wat fruit. Dat doe ik in de broodtrommel.", picture:"./assets/broodmaaltijd.png" },
-    {title:"Tas inpakken.",duur:5, description:"Ik doe alles in mijn tas. Ik let er ook op dat ik mijn huiswerk meeneem.", picture:"./assets/tasinpakken.png"},
-    {title:"Haren kammen.",duur:10, description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen", picture:"./assets/borstelhaar.png"},
-    {title:"Met de katten knuffelen.", duur:0, description:"Ik zoek een kat uit en ga deze op een vriendelijke manier knuffelen.", picture:"./assets/katlopen.png"},
-    {departTime:7.5,departMessage:"De TAXI staat er!!"}
+    {title:"Wassen",duration:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
+    {title:"Medicijnen innemen.",duration:1 , description:"Ik pak een pilletje uit het vakje en neem het in.", picture:"./assets/medicijndoos.png"}, 
+    {title:"Ontbijt klaarmaken en eten.",duration:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
+    {title:"Eten klaarmaken voor school.",duration:10, description:"Ik maak brood klaar voor school en ik pak wat fruit. Dat doe ik in de broodtrommel.", picture:"./assets/broodmaaltijd.png" },
+    {title:"Tas inpakken.",duration:5, description:"Ik doe alles in mijn tas. Ik let er ook op dat ik mijn huiswerk meeneem.", picture:"./assets/tasinpakken.png"},
+    {title:"Haren kammen.",duration:10, description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen", picture:"./assets/borstelhaar.png"},
+    {title:"Met de katten knuffelen.", duration:0, description:"Ik zoek een kat uit en ga deze op een vriendelijke manier knuffelen.", picture:"./assets/katlopen.png"},
+    {departTime:7.42,departMessage:"De TAXI staat er!!"}
 ]
 const weekendTodoList = [
-    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
-    {title:"Medicijnen innemen.",duur:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
-    {title:"Aankleden.",duur:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
-    {title:"Haren kammen.",duur:10,description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen",picture:"./assets/borstelhaar.png"},
-    {title:"Met de katten knuffelen.",duur:1,description:"Ik zoek een kat uit en ga deze op een vriendelijke manier knuffelen.",picture:"./assets/katlopen.png"},
+    {title:"Wassen",duration:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
+    {title:"Medicijnen innemen.",duration:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
+    {title:"Aankleden.",duration:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
+    {title:"Haren kammen.",duration:10,description:"Ik pak de borstel en eventueel anti-klit spray. Ik ga dan mijn haren borstelen",picture:"./assets/borstelhaar.png"},
+    {title:"Met de katten knuffelen.",duration:1,description:"Ik zoek een kat uit en ga deze op een vriendelijke manier knuffelen.",picture:"./assets/katlopen.png"},
     {departTime:11,departMessage:"Het is dan wel weekend, maar je moet nu wel aangekleed zijn."}
 ]
 const onlineTodoList = [
-    {title:"Wassen",duur:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
-    {title:"Medicijnen innemen.",duur:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
-    {title:"Ontbijt klaarmaken en eten.",duur:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
-    {title:"Aankleden.",duur:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
-    {title:"Online les",duur:1,description:"Je bent nu klaar om les te gaan volgen",picture:"./assets/laptop.png"},
+    {title:"Wassen",duration:5,description:"Even opfrissen..",picture:"./assets/wassen.png"},
+    {title:"Medicijnen innemen.",duration:1,description:"Ik pak een pilletje uit het vakje en neem het in.",picture:"./assets/medicijndoos.png"},
+    {title:"Ontbijt klaarmaken en eten.",duration:25 , description:"Ik pak een boterham of cracker. Daar doe ik beleg op en dan eet ik hem op.", picture:"./assets/ontbijt.png"},
+    {title:"Aankleden.",duration:15,description:"Trek kleren aan , ook sokken",picture:"./assets/aankleden.png"},
+    {title:"Online les",duration:1,description:"Je bent nu klaar om les te gaan volgen",picture:"./assets/laptop.png"},
     {departTime:8.5,departMessage:"Je moet nu les gaan volgen op je laptop."}
 ]
 
@@ -62,7 +62,7 @@ const updateDOM = () => {
 const calcneededTime = () => {
     let neededTime = 0;
     for (i=index; i< todoList.length-2; i++) {
-        neededTime+= todoList[i].duur;
+        neededTime+= todoList[i].duration;
         
     }
     displayNeeded.innerHTML = `Je hebt nog ${neededTime} minuten nodig om alles te doen.`
