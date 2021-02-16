@@ -38,10 +38,10 @@ const onlineTodoList = [
 ]
 
 const selectList = () =>{
-    if (today==2 || today==4){ // no school, then online school at 8.30am
-        todoList = onlineTodoList;
-    }
-    else if(today==6||today==0){ // in the weekend, be ready at 11.00am
+    //if (today==2 || today==4){ // no school, then online school at 8.30am
+       // todoList = onlineTodoList;
+   // }
+     if(today==6||today==0){ // in the weekend, be ready at 11.00am
         todoList = weekendTodoList;
     }
     else todoList = schoolTodoList;
